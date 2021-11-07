@@ -48,5 +48,12 @@ end
 ## Start the App
 
 - Start the app using `shiny::runApp()` in R console after setting the project directory as working directory
+
+## Using the App
+
+- In the Configure panel of the app, we can set an Ethereum Address to track.
 <img src="images/Dem7.png"  align="center"/>
+
+- The Visualisation panel of the app contains the collapsible network plot, where each node represents and Ethereum Address and we can hover on it to see its stats.
+<img src="images/Dem8.png"  align="center"/>
 
