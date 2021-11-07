@@ -1,4 +1,9 @@
 # Transaction-Propagation-Visualizer
 A Web App in Shiny with R as backend with plumber API and using PARSIQ Smart Triggers
 
-View the [Video Walkthrough](https://www.youtube.com/watch?v=GpWZLMB2lvM) on how the app looks and works.
+## Video Tutorial
+
+Youtube Video : A full tutorial of the Working and capabilities of App.
+
+[![Alt text](images/Working_Gif.gif)](https://www.youtube.com/watch?v=F6dsHxpkwGY)
+
