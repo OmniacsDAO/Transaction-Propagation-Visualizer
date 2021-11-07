@@ -4,7 +4,7 @@ A Web App in Shiny with R as backend with plumber API and using PARSIQ Smart Tri
 ## [App Walkthrough on YouTube](https://www.youtube.com/watch?v=D9sDKhzPo24) <<< Click Here
 
 ## Video Preview GIF
-[![Alt text](images/Working_Gif.gif)](https://www.youtube.com/watch?v=D9sDKhzPo24)
+[![Alt text](images/Working_Gif_2.gif)](https://www.youtube.com/watch?v=D9sDKhzPo24)
 
 ## Setup Backend
 - Start the R backend which has the API code to listen on port `6789`
