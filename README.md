@@ -57,3 +57,12 @@ end
 - The Visualisation panel of the app contains the collapsible network plot, where each node represents and Ethereum Address and we can hover on it to see its stats.
 <img src="images/Dem8.png"  align="center"/>
 
+- The Network Plot updates in real time as soon we see a new transaction in Transaction Propogation Network.
+
+## [App Walkthrough on YouTube](https://www.youtube.com/watch?v=GpWZLMB2lvM) <<< Click Here
+
+## About Us
+
+[Omni Analytics Group](https://omnianalytics.io) is an incorporated group of passionate technologists who help others use data science to change the world. Our  practice of data science leads us into many exciting areas where we enthusiastically apply our machine learning, artificial intelligence and analysis skills. Our flavor for this month, the blockchain!  To learn more about what we do or just to have fun, join us over on [Twitter](https://twitter.com/OmniAnalytics).
+
+
