@@ -12,3 +12,6 @@ A Web App in Shiny with R as backend with plumber API and using PARSIQ Smart Tri
 
 - Create a New Table under User Data named `MonitorAddress` and with fields `address` and `Level`
 <img src="images/Step1.png"  align="center"/>
+
+- Copy Project API Key and put in under `proj_api_key` in `env.R` file
+<img src="images/Step2.png"  align="center"/>
