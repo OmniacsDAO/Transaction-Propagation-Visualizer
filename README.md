@@ -6,7 +6,7 @@ A Web App in Shiny with R as backend with plumber API and using PARSIQ Smart Tri
 ## Video Preview GIF
 [![Alt text](images/Working_Gif.gif)](https://www.youtube.com/watch?v=GpWZLMB2lvM)
 
-## Setup Process
+## Setup Backend
 - Start the R backend which has the API code to listen on port `6789`
 `Rscript start_api.R`
 
@@ -45,4 +45,8 @@ end
 
 - Deploy the Trigger
 
+## Start the App
+
+- Start the app using `shiny::runApp()` in R console after setting the project directory as working directory
+<img src="images/Dem7.png"  align="center"/>
 
