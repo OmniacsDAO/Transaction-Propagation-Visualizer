@@ -1,4 +1,4 @@
-# Real Time Transaction-Propagation-Visualizer
+# PARSIQ Real Time Transaction-Propagation-Visualizer
 A Web App in Shiny with R as backend with plumber API and using PARSIQ Smart Triggers to track transaction propagation started from one address and spreading across blockchain to different addresses.
 
 ## [App Walkthrough on YouTube](https://www.youtube.com/watch?v=GpWZLMB2lvM) <<< Click Here
