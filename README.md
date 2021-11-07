@@ -8,3 +8,4 @@ A Web App in Shiny with R as backend with plumber API and using PARSIQ Smart Tri
 
 ## Setup Process
 - Install the reticulate package using<br>`library(reticulate)`
+<img src="images/0.png"  align="center"/>
