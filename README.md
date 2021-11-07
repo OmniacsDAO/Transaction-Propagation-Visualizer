@@ -3,7 +3,6 @@ A Web App in Shiny with R as backend with plumber API and using PARSIQ Smart Tri
 
 ## [App Walkthrough on YouTube](https://www.youtube.com/watch?v=GpWZLMB2lvM)
 
- 
 ## Video Preview GIF
 [![Alt text](images/Working_Gif.gif)](https://www.youtube.com/watch?v=GpWZLMB2lvM)
 
