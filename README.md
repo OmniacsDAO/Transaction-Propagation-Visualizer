@@ -30,6 +30,7 @@ A Web App in Shiny with R as backend with plumber API and using PARSIQ Smart Tri
 
 - Create a new Trigger and add the webhook Transport we generated above in its deliver channels.
 <img src="images/Dem6.png"  align="center"/>
+
 ```
 stream _
 from Transfers
