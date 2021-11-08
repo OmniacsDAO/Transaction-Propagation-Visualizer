@@ -55,7 +55,7 @@ end
 <img src="images/ADem07.png"  align="center"/>
 
 - The Visualisation panel of the app contains the collapsible network plot, where each node represents and Ethereum Address and we can hover on it to see its stats.
-<img src="images/ADem08.png"  align="center"/>
+<img src="images/ADem18.png"  align="center"/>
 
 - The Transcations panel of the app contains the transactions data received from PARSIQ.
 <img src="images/ADem09.png"  align="center"/>
