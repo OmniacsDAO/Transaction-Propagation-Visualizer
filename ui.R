@@ -3,6 +3,7 @@ library(shinydashboard)
 library(collapsibleTree)
 library(httr)
 library(jsonlite)
+library(DT)
 
 dashboardPage(
 	dashboardHeader(title = "PARSIQ Tx Viz"),
@@ -11,7 +12,8 @@ dashboardPage(
 		sidebarMenu(
 			id = "tabs",
 			menuItem("Configure", tabName = "config", icon = icon("cogs")),
-			menuItem("Visualisation", tabName = "vis", icon = icon("chart-line"))
+			menuItem("Visualisation", tabName = "vis", icon = icon("chart-line")),
+			menuItem("Transactions", tabName = "txs", icon = icon("arrows-alt-h"))
 		)
 	),
 
@@ -20,15 +22,17 @@ dashboardPage(
 			tabItem(tabName = "config",
 				column(width = 12,
 					textInput("add_track", label = h3("Address To Track "), value = "0xB5d6801bC3dd17648e66aE22B80757692b1C5a42"),
-					actionButton("push_track", label = "Start Tracking"),
-					# uiOutput("aum_writeup")
+					actionButton("push_track", label = "Start Tracking")
 				)
 			),
 			tabItem(tabName = "vis",
 				column(width = 12,
-					collapsibleTreeOutput("aa"),
-					# hr(),
-					# uiOutput("b_tok_writeup")
+					collapsibleTreeOutput("Tree")
+				)
+			),
+			tabItem(tabName = "txs",
+				column(width = 12,
+					dataTableOutput('Tx_table')
 				)
 			)
 		)

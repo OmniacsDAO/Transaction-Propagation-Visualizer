@@ -5,6 +5,8 @@ library(httr)
 library(jsonlite)
 library(plyr)
 library(xtable)
+library(lubridate)
+library(DT)
 source("env.R")
 options(scipen=9999)
 
@@ -43,7 +45,7 @@ function(input, output, session)
   	})
 	
 
-	output$aa <- renderCollapsibleTree({
+	output$Tree <- renderCollapsibleTree({
 											# u_dat <- readRDS("data_user.RDS")
 											# tx_dat <- readRDS("data_body.RDS")
 											u_dat <- readRDS("data_user.RDS")
@@ -65,4 +67,22 @@ function(input, output, session)
 											tx_dat_plot$tooltip <- sapply(tx_dat_plot$to,get_node_html,tx_dat=tx_dat,u_dat=u_dat)
 											collapsibleTreeNetwork(tx_dat_plot,collapsed = FALSE,attribute="to",nodeSize="leafCount",tooltipHtml="tooltip",fontSize=10)
 									})
+	output$Tx_table <- renderDataTable({
+												tx_dat <- tx_dat_r()
+												if(nrow(tx_dat) ==0) return(NULL)
+												out_tab <- data.frame(
+																		Time = as_datetime(as.numeric(tx_dat$block_timestamp)),
+																		From = tx_dat$from,
+																		To = tx_dat$to,
+																		Value = paste0(as.numeric(tx_dat$value)/10^18," ETH"),
+																		"Tx Link" = paste0('<a href="',paste0("https://rinkeby.etherscan.io/tx/",tx_dat$tx_hash),'">View</a>'),
+																		check.names=FALSE
+																	)
+												datatable(
+															out_tab[order(out_tab$Time,decreasing=TRUE),],
+															escape=FALSE,selection = 'none',
+															rownames=FALSE,
+															options = list(pageLength = 10,bInfo = FALSE,searching=FALSE)
+														)%>%formatDate(1, method = 'toLocaleString')
+										})
 }
