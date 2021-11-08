@@ -52,13 +52,13 @@ end
 ## Using the App
 
 - In the Configure panel of the app, we can set an Ethereum Address to track.
-<img src="images/ADem7.png"  align="center"/>
+<img src="images/ADem07.png"  align="center"/>
 
 - The Visualisation panel of the app contains the collapsible network plot, where each node represents and Ethereum Address and we can hover on it to see its stats.
-<img src="images/ADem8.png"  align="center"/>
+<img src="images/ADem08.png"  align="center"/>
 
 - The Transcations panel of the app contains the transactions data received from PARSIQ.
-<img src="images/ADem9.png"  align="center"/>
+<img src="images/ADem09.png"  align="center"/>
 
 - The Network Plot updates in real time as soon we see a new transaction in Transaction Propogation Network.
 
