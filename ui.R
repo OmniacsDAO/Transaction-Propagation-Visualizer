@@ -6,7 +6,17 @@ library(jsonlite)
 library(DT)
 
 dashboardPage(
-	dashboardHeader(title = "PARSIQ Tx Viz"),
+	dashboardHeader(
+						title = "PARSIQ Tx Viz",
+						tags$li(a(
+									href = 'https://parsiq.net',
+									target="_blank",
+									img(src = 'parsiq_logo.png',title = "PARSIQ", height = "30px"),
+									style = "padding-top:10px; padding-bottom:10px;"
+								),
+						class = "dropdown"
+						)
+					),
 
     dashboardSidebar(
 		sidebarMenu(
